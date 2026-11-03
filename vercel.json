@@ -1,0 +1,9 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/all-project",
+      "destination": "/all-project.html"
+    }
+  ]
+}
