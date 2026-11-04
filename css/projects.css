@@ -240,8 +240,8 @@ body.projects-page nav.archive-nav {
 
 .project-gallery {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: clamp(24px, 3.5vw, 48px);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(16px, 2vw, 28px);
   padding: 0 clamp(0px, 4vw, 40px);
 }
 
@@ -249,9 +249,9 @@ body.projects-page nav.archive-nav {
   position: relative;
   display: block;
   width: 100%;
-  padding: 12px;
+  padding: 10px;
   border: 1px solid var(--card-border);
-  border-radius: 24px;
+  border-radius: 20px;
   background: var(--card-bg);
   backdrop-filter: var(--glass-blur);
   -webkit-backdrop-filter: var(--glass-blur);
@@ -331,7 +331,7 @@ body.projects-page nav.archive-nav {
 }
 
 .gallery-card-title {
-  font-size: clamp(1.25rem, 2vw, 1.8rem);
+  font-size: clamp(1.05rem, 1.35vw, 1.45rem);
   font-weight: 700;
   letter-spacing: -.03em;
   color: #fff;
@@ -339,7 +339,7 @@ body.projects-page nav.archive-nav {
 
 .gallery-card-type {
   color: var(--fg-soft);
-  font-size: .86rem;
+  font-size: .78rem;
   font-weight: 500;
   display: flex;
   align-items: center;
@@ -746,8 +746,51 @@ html.project-dialog-open, html.project-dialog-open body {
   transform: translateX(-3px);
 }
 
-@media(max-width: 860px) {
-  .project-gallery { grid-template-columns: 1fr; }
-  .dialog-content { grid-template-columns: 1fr; gap: 20px; }
-  .archive-heading { flex-direction: column; align-items: flex-start; }
+/* ==========================================================================
+   RESPONSIVE ARCHIVE LAYOUT
+   ========================================================================== */
+
+/* Medium screens: two cards per row */
+@media (max-width: 1000px) {
+  .project-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(16px, 2.5vw, 28px);
+  }
+
+  .gallery-card-title {
+    font-size: clamp(1.1rem, 2vw, 1.5rem);
+  }
+}
+
+/* Small screens: one card per row */
+@media (max-width: 640px) {
+  .project-gallery {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .gallery-card {
+    padding: 10px;
+  }
+
+  .gallery-card-title {
+    font-size: clamp(1.2rem, 5vw, 1.55rem);
+  }
+
+  .gallery-card-type {
+    font-size: .82rem;
+  }
+}
+
+/* Shared tablet/mobile adjustments */
+@media (max-width: 860px) {
+  .dialog-content {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .archive-heading {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
