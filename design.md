@@ -12,7 +12,7 @@ The design system has evolved into an uncompromising, luxury **Monochrome Dark M
 1. **Elimination of Blues:** All colored blue tones, royal blue meshes, and saturated color casts are completely eliminated. The entire interface is grounded in absolute pure black (`#000000`) and deep obsidian surfaces.
 2. **Brilliant Pure White Typography:** All major headings, titles, and row animations are solid, opaque, brilliant white (`#ffffff` / `-webkit-text-fill-color: #ffffff`). No color gradients or blue shadows on typography.
 3. **Reflective Chrome Glassmorphism:** Cards and dialogs utilize dark glass (`rgba(14, 14, 14, 0.75)`) bounded by crisp white borders (`rgba(255, 255, 255, 0.16)` to `0.65`) and specular white top-rim reflections (`inset 0 1px 0 rgba(255, 255, 255, 0.22)`).
-4. **Solid White & Inversion Controls:** Primary interactive elements (action buttons, filter toggles, play badges) are pure solid white with deep black text/icons, inverting with luminous white glows on hover.
+4. **Solid White & Inversion Controls:** Primary interactive elements (action buttons and filter toggles) are pure solid white with deep black text/icons, inverting with luminous white glows on hover. Video preview cards do not display decorative play badges.
 
 ---
 
@@ -75,7 +75,7 @@ All colors are centralized as CSS custom variables in `css/style.css`:
 
 ### 4.3. Media Previews & Video Cards
 * **Media Container:** Solid black base frame (`#000000`) with subtle white hairline boundary.
-* **Play Button Badge:** Circular solid white badge (`#ffffff`) with deep black play triangle (`#000000`), scaling up to 1.18x on card hover.
+* **Video Preview Cards:** Show the animation preview directly without a decorative play-button overlay. Cards remain interactive and open the project details dialog when selected.
 
 ### 4.4. Filter Pills & Dialog Modal
 * **Filter Pills:** Inactive pills are obsidian glass with white borders; active pills are solid white with black text and inverted count bubbles.

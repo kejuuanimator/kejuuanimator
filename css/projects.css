@@ -293,25 +293,6 @@ body.projects-page nav.archive-nav {
   transform: scale(1.04);
 }
 
-.gallery-play-badge {
-  position: absolute;
-  right: 14px;
-  bottom: 14px;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background: #ffffff;
-  color: #000000;
-  display: grid;
-  place-items: center;
-  box-shadow: 0 0 14px rgba(255, 255, 255, 0.6);
-  transition: transform .3s ease, box-shadow .3s ease;
-}
-
-.gallery-card:hover .gallery-play-badge {
-  transform: scale(1.18);
-  box-shadow: 0 0 24px rgba(255, 255, 255, 0.9);
-}
 
 .gallery-card-info {
   display: grid;

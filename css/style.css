@@ -575,28 +575,6 @@ h1.hero-heading,
   display: block;
 }
 
-.hero-widget-play {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  background: #ffffff;
-  border: 1px solid #ffffff;
-  color: #000000;
-  display: grid;
-  place-items: center;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
-  pointer-events: none;
-  transition: transform .3s ease, box-shadow .3s ease;
-}
-
-.hero-widget:hover .hero-widget-play {
-  transform: translate(-50%, -50%) scale(1.15);
-  box-shadow: 0 0 30px rgba(255, 255, 255, 0.9);
-}
 
 .hero-widget-tag {
   position: absolute;
@@ -1028,24 +1006,6 @@ h2 {
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.selected-project-play-icon {
-  position: relative;
-  z-index: 2;
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  background: #ffffff;
-  color: #000000;
-  display: grid;
-  place-items: center;
-  box-shadow: 0 0 14px rgba(255, 255, 255, 0.6);
-  transition: transform .25s ease, box-shadow .25s;
-}
-
-.selected-project:hover .selected-project-play-icon {
-  transform: scale(1.2);
-  box-shadow: 0 0 22px rgba(255, 255, 255, 0.9);
-}
 
 .selected-project-info {
   display: flex;
